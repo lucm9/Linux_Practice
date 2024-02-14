@@ -119,6 +119,7 @@ Remove the `ProjectB` directory and all its contents, ensuring you do not receiv
 
 Creating Directories and Files:
 Create a directory named `ProjectData` in your home directory.
+
 Inside `ProjectData`, create two directories: `Reports` and `Data`.
 Within `Reports`, create an empty file named `Summary.txt`.
 In the `Data` directory, create three empty files: `data1.csv`, `data2.csv`, and `log.txt`.
@@ -135,4 +136,7 @@ Move `data1.csv` from `Data` to `Reports`, and rename it to `report1.csv`.
 Delete the `log.txt` file from the `Reports` directory.
 Remove the `Data` directory and all of its contents.
 
+![image](https://github.com/lucm9/Linux_Practice/assets/96879757/ecf5af90-6e04-4a7f-804b-75f308a7507c)
+
+![image](https://github.com/lucm9/Linux_Practice/assets/96879757/fcea5a15-5a52-4007-ae40-966bf7de8def)
 
