@@ -27,6 +27,7 @@ also verify the visudo the `sudoers` file ensure the configuration are set corre
 **Public Key Upload:** 
 
 For this exercise we will make use of `EC2 Instaces`
+
 ![5 James_VM](https://github.com/lucm9/Linux_Practice/assets/96879757/5de5dc02-8118-4482-93d3-95ae5b26d1a6)
 
 ![4 generate_ssh_keygen](https://github.com/lucm9/Linux_Practice/assets/96879757/f9f38d9b-e27e-4700-ab1a-53a26f79470d)
