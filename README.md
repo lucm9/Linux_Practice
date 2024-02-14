@@ -23,7 +23,7 @@ before adding the user to the sudo group we have an error. Lets go ahead and add
 
 `sudo usermod -aG root James`
 
-also verify the visudom the `sudoers` file ensure the configuration are set correctly. 
+also verify the visudo the `sudoers` file ensure the configuration are set correctly. Also verify which group we need to add our user to in order for our users to have `sudo` previleges.
 **Public Key Upload:** 
 
 For this exercise we will make use of `EC2 Instaces`
