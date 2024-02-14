@@ -21,15 +21,15 @@ Add each user to the sudo group in order for them to execute administrative comm
 
 before adding the user to the sudo group we have an error. Lets go ahead and add the user by running the following command:
 
-`sudo usermod -aG root <username>`
+`sudo usermod -aG root James`
 
+also verify the visudom the `sudoers` file ensure the configuration are set correctly. 
 **Public Key Upload:** 
 
 For this exercise we will make use of `EC2 Instaces`
 ![5 James_VM](https://github.com/lucm9/Linux_Practice/assets/96879757/5de5dc02-8118-4482-93d3-95ae5b26d1a6)
 
 ![4 generate_ssh_keygen](https://github.com/lucm9/Linux_Practice/assets/96879757/f9f38d9b-e27e-4700-ab1a-53a26f79470d)
-
 
 I have created an Ec2 instance names `JamesVM` this instance will have its own `Public-key`. To generate the public key we need to run `ssh-keygen`. 
 Each new user will provide you with their public SSH key. You are required to set up SSH key-based authentication for each user.
@@ -44,6 +44,10 @@ touch authorized_key
 vi authorized_key - copy and paste the public key from the users machine. 
 ```
 ![3 authorized_key](https://github.com/lucm9/Linux_Practice/assets/96879757/9a5f26da-c0d2-43ed-9b40-260ae939b9d0)
+
+**Successful Connection:**
+
+![7 Successfully_login](https://github.com/lucm9/Linux_Practice/assets/96879757/325895ec-206b-4be7-867a-689dc520b8e3)
 
 *Deliverables:
 **Reflection:** 
@@ -103,7 +107,6 @@ Copy the `report_template.doc` from `Templates` to both `ProjectA` and `ProjectB
 cd  /home/ec2-user/MyWorkspace/Templates
 cp -R report_template.doc /home/ec2-user/MyWorkspace/Projects/ProjectA /home/ec2-user/MyWorkspace/Projects/ProjectB
 ```
-
 *Cleanup:
 Delete the `invoice_template.xls` file from the `Templates` directory.
 
@@ -112,4 +115,24 @@ Delete the `invoice_template.xls` file from the `Templates` directory.
 Remove the `ProjectB` directory and all its contents, ensuring you do not receive any error messages even if it's not empty.
 
 `rm -rf ProjectB`
+
+
+Creating Directories and Files:
+Create a directory named `ProjectData` in your home directory.
+Inside `ProjectData`, create two directories: `Reports` and `Data`.
+Within `Reports`, create an empty file named `Summary.txt`.
+In the `Data` directory, create three empty files: `data1.csv`, `data2.csv`, and `log.txt`.
+*Navigating the Filesystem:
+Use the command line to navigate to the `Reports` directory from your home directory.
+Then, navigate to the `Data` directory using a relative path.
+*Viewing Directory Contents:
+Display the contents of the `ProjectData` directory in a detailed list format, including hidden files.
+Explain what the information in this detailed list means (file permissions, number of links, owner name, group name, file size, and date of last modification).
+*Copying and Moving Files:
+Copy `log.txt` from `Data` to `Reports`.
+Move `data1.csv` from `Data` to `Reports`, and rename it to `report1.csv`.
+*Deleting Files and Directories:
+Delete the `log.txt` file from the `Reports` directory.
+Remove the `Data` directory and all of its contents.
+
 
